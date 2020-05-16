@@ -83,6 +83,20 @@ body {
                 flex-direction: column;
                 background-color: $myWhite;
                 position: absolute;
+                .break {
+                    height: 5px;
+                    background-color: $myWhite;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .bar {
+                        background-color: $myGrey;
+                        height: 1px;
+                        opacity: 0.7;
+                        width: 100%;
+                        margin: 0 15px 0 15px;
+                    }
+                }
                 .subMenuButt {
                     padding: 10px 15px 10px 15px;
                     background-color: $myWhite;

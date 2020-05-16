@@ -5,21 +5,37 @@ export default class TitleBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            title: "This is a window name example",
+            title: "This is a window title example",
             menu: [
                 {
                     name: "File",
                     subMenu: [
                         { name: "New", available: true, function: props.functions.utilityFunction1, shortcut: "" },
+                        { name: "Open", available: true, function: props.functions.utilityFunction1, shortcut: "" },
                         {
                             name: "Save",
-                            available: true,
+                            available: false,
                             function: props.functions.utilityFunction1,
                             shortcut: "Ctrl + S",
                         },
+                        { name: "Save As", available: false, function: props.functions.utilityFunction1, shortcut: "" },
+                        {
+                            name: "Save A",
+                            available: false,
+                            function: props.functions.utilityFunction1,
+                            shortcut: "Alt + F4",
+                        },
+                        { name: "break" },
+                        {
+                            name: "Preferences",
+                            available: true,
+                            function: props.functions.utilityFunction1,
+                            shortcut: "",
+                        },
+                        { name: "break" },
                         {
                             name: "Exit",
-                            available: false,
+                            available: true,
                             function: props.functions.utilityFunction1,
                             shortcut: "Alt + F4",
                         },
@@ -40,6 +56,7 @@ export default class TitleBar extends React.Component {
                             function: props.functions.utilityFunction1,
                             shortcut: "Ctrl + Shift + Z",
                         },
+                        { name: "break" },
                         {
                             name: "Cut",
                             available: false,
@@ -129,20 +146,39 @@ export default class TitleBar extends React.Component {
                     name: "Help",
                     subMenu: [
                         {
-                            name: "Why should i help you?",
+                            name: "Tricks",
                             subMenu: [
                                 {
-                                    name: "Because i asked! Now act little webpage!",
+                                    name: "Flip",
                                     available: true,
                                     function: props.functions.utilityFunction2,
                                     shortcut: "",
                                 },
                                 {
-                                    name: "Do as you wish to, I don't care anyway.",
+                                    name: "Roll",
                                     available: true,
                                     function: () => {
                                         window.location.href = "https://youtu.be/dQw4w9WgXcQ?t=85";
                                     },
+                                    shortcut: "",
+                                },
+                            ],
+                        },
+                        { name: "break" },
+                        {
+                            name: "Contact",
+                            subMenu: [
+                                {
+                                    name: "Discord : Cody#5717",
+                                    available: false,
+                                    function: null,
+                                    shortcut: "",
+                                },
+
+                                {
+                                    name: "Email : cody.ad4@gmail.com",
+                                    available: false,
+                                    function: null,
                                     shortcut: "",
                                 },
                             ],
