@@ -1,6 +1,6 @@
 $myBlack: #393939;
 $myWhite: #f2f2f3;
-$bodyBG: rgb(80, 80, 82);
+$bodyBG: #f2f2f3;
 $myGrey: rgba(128, 128, 128, 0.527);
 $hoverMB: rgba(255, 255, 255, 0.2);
 $hoverSubMB: rgb(118, 138, 248);
@@ -181,9 +181,10 @@ body {
     align-content: flex-start;
     div {
         margin: 70px 0 0 70px;
+        border-radius: 20px;
     }
-    opacity: 0.5;
 }
+
 .red {
     background-color: rgb(199, 146, 146);
 }

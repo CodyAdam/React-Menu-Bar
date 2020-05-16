@@ -4,7 +4,7 @@ export default class SubMenuButt extends React.Component {
     render() {
         let className = "subMenuButt normal";
         if (!this.props.available) className = "subMenuButt notAv";
-        if (this.props.name == "break")
+        if (this.props.name === "break")
             return (
                 <div className="break">
                     <div className="bar"></div>
