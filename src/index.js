@@ -43,7 +43,7 @@ class MainWindow extends React.Component {
 
     utilityFunction4() {
         document.getElementById("Decoration").style.opacity = 1;
-        document.body.style.backgroundColor = "#d4d4e4";
+        document.body.style.backgroundColor = "#F2F2F3";
     }
 
     render() {

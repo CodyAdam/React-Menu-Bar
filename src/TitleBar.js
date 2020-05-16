@@ -20,10 +20,10 @@ export default class TitleBar extends React.Component {
                         },
                         { name: "Save As", available: false, function: props.functions.utilityFunction1, shortcut: "" },
                         {
-                            name: "Save A",
+                            name: "Save All",
                             available: false,
                             function: props.functions.utilityFunction1,
-                            shortcut: "Alt + F4",
+                            shortcut: "Ctrl + Shift + S",
                         },
                         { name: "break" },
                         {
@@ -119,7 +119,7 @@ export default class TitleBar extends React.Component {
                                                 {
                                                     name: "Mhhh ?",
                                                     available: true,
-                                                    function: props.functions.utilityFunction1,
+                                                    function: props.functions.utilityFunction2,
                                                     shortcut: "",
                                                 },
                                             ],
